@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Carnival — All Day Buffet | Gulberg, Lahore</title>
+<meta name="description" content="The Carnival All Day Buffet — a Michelin-inspired live-kitchen dining experience on MM Alam Road, Gulberg, Lahore. Reserve your table.">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Marcellus&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+<!-- AOS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<!-- Swiper -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.4/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!-- ============ LUXURY LOADER ============ -->
+<div id="loader">
+  <div class="loader-inner">
+    <span class="loader-mark">C</span>
+    <div class="loader-line"><i></i></div>
+    <p>THE CARNIVAL</p>
+  </div>
+</div>
+
+<!-- ============ SCROLL PROGRESS BAR ============ -->
+<div id="scroll-progress"></div>
+
+<!-- ============ CURSOR GLOW ============ -->
+<div id="cursor-glow"></div>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/923177775179" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- ============ STICKY RESERVE BUTTON (mobile) ============ -->
+<a href="#reservation" class="sticky-reserve">Reserve Table</a>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">THE <span>CARNIVAL</span></a>
+    <button class="navbar-toggler" type="button" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#timings">Timings</a></li>
+        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link btn-reserve-nav" href="#reservation">Reserve</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ MOBILE MENU OVERLAY ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+  <ul>
+    <li><a href="#home" class="mobile-link">Home</a></li>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#menu" class="mobile-link">Menu</a></li>
+    <li><a href="#timings" class="mobile-link">Buffet Timing</a></li>
+    <li><a href="#gallery" class="mobile-link">Gallery</a></li>
+    <li><a href="#offers" class="mobile-link">Offers</a></li>
+    <li><a href="#reservation" class="mobile-link">Reservations</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+  <div class="mobile-menu-footer">
+    <a href="tel:+923177775179"><i class="fa-solid fa-phone"></i> +92 317 7775179</a>
+  </div>
+</div>
+
+<!-- ============ HERO SECTION ============ -->
+<header id="home" class="hero">
+  <video autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1600&auto=format&fit=crop" class="hero-video">
+    <source src="https://cdn.coverr.co/videos/coverr-cooking-in-a-restaurant-kitchen-9573/1080p.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="floating-elements" aria-hidden="true">
+    <span class="float-item f1"><i class="fa-solid fa-utensils"></i></span>
+    <span class="float-item f2"><i class="fa-solid fa-wine-glass"></i></span>
+    <span class="float-item f3"><i class="fa-solid fa-fire-flame-curved"></i></span>
+    <span class="float-item f4"><i class="fa-solid fa-shrimp"></i></span>
+    <span class="float-item f5"><i class="fa-solid fa-mug-saucer"></i></span>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow" data-aos="fade-down" data-aos-delay="200">GULBERG · LAHORE · EST. LIVE KITCHEN DINING</p>
+    <h1 class="hero-title">
+      <span class="line" data-aos="fade-up" data-aos-delay="300">Experience The</span>
+      <span class="line gold-italic" data-aos="fade-up" data-aos-delay="500">Ultimate Buffet</span>
+    </h1>
+    <p class="hero-sub" data-aos="fade-up" data-aos-delay="700">
+      An unlimited procession of live-fired grills, slow curries, and dessert artistry —
+      served the moment it's ready, on MM Alam Road.
+    </p>
+    <div class="hero-btns" data-aos="fade-up" data-aos-delay="900">
+      <a href="#reservation" class="btn-luxury">Reserve Table</a>
+      <a href="#menu" class="btn-outline-luxury">Explore Menu</a>
+    </div>
+  </div>
+
+  <div class="scroll-down" data-aos="fade-in" data-aos-delay="1200">
+    <span></span>
+    <p>Scroll</p>
+  </div>
+</header>
+
+<!-- ============ MARQUEE STRIP ============ -->
+<div class="gold-marquee">
+  <div class="marquee-track">
+    <span>LIVE BBQ COUNTER</span><i class="fa-solid fa-gem"></i>
+    <span>UNLIMITED REFILLS</span><i class="fa-solid fa-gem"></i>
+    <span>DESSERT ISLAND</span><i class="fa-solid fa-gem"></i>
+    <span>OPEN TILL MIDNIGHT</span><i class="fa-solid fa-gem"></i>
+    <span>LIVE BBQ COUNTER</span><i class="fa-solid fa-gem"></i>
+    <span>UNLIMITED REFILLS</span><i class="fa-solid fa-gem"></i>
+    <span>DESSERT ISLAND</span><i class="fa-solid fa-gem"></i>
+    <span>OPEN TILL MIDNIGHT</span><i class="fa-solid fa-gem"></i>
+  </div>
+</div>
+
+<!-- ============ ABOUT SECTION ============ -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop" alt="Luxury restaurant interior" class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=700&auto=format&fit=crop" alt="Chef plating a dish" class="about-img-float">
+          <div class="about-badge">
+            <span>13+</span>
+            <p>Years of<br>Excellence</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <p class="eyebrow-gold">Our Story</p>
+        <h2 class="section-title">A Feast Built On <span class="gold-italic">Theatre</span> & Taste</h2>
+        <p class="section-text">
+          The Carnival began with a simple idea: dining should never be static. Every dish on our floor
+          is finished live — grilled, tossed, or plated in front of you — so the last bite is exactly
+          as good as the first.
+        </p>
+        <p class="section-text">
+          Our mission is to bring a premium, all-day buffet experience to Gulberg without losing the
+          warmth of a family table. Ten live stations, one unlimited price, and a dessert island
+          guests linger at long after the main course is done.
+        </p>
+
+        <div class="counters-row">
+          <div class="counter-box">
+            <span class="counter" data-count="13">0</span>
+            <p>Years Serving</p>
+          </div>
+          <div class="counter-box">
+            <span class="counter" data-count="250000">0</span>
+            <p>Guests Hosted</p>
+          </div>
+          <div class="counter-box">
+            <span class="counter" data-count="120">0</span>
+            <p>Signature Dishes</p>
+          </div>
+          <div class="counter-box">
+            <span class="counter" data-count="9">0</span>
+            <p>Culinary Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUFFET CATEGORIES ============ -->
+<section class="section categories-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">The Spread</p>
+      <h2 class="section-title">Ten Live Stations, <span class="gold-italic">One Table</span></h2>
+    </div>
+    <div class="row g-4">
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1589187151053-5ec8818e661b?q=80&w=800&auto=format&fit=crop" alt="Pakistani cuisine">
+            <div class="cat-overlay">
+              <h3>Pakistani</h3>
+              <p>Karahis, biryani & desi curries simmered fresh through service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=800&auto=format&fit=crop" alt="Chinese cuisine">
+            <div class="cat-overlay">
+              <h3>Chinese</h3>
+              <p>Wok-tossed noodles, dim sum & Szechuan classics.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="BBQ grill">
+            <div class="cat-overlay">
+              <h3>Live BBQ</h3>
+              <p>Seekh, malai boti & fish grilled to order on open coals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?q=80&w=800&auto=format&fit=crop" alt="Continental cuisine">
+            <div class="cat-overlay">
+              <h3>Continental</h3>
+              <p>Roasts, grills & classic Western comfort plates.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop" alt="Italian cuisine">
+            <div class="cat-overlay">
+              <h3>Italian</h3>
+              <p>Wood-fired pizza & fresh pasta, tossed to order.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=800&auto=format&fit=crop" alt="Desserts">
+            <div class="cat-overlay">
+              <h3>Desserts</h3>
+              <p>Kheer, gulab jamun & a build-your-own soft serve bar.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=800&auto=format&fit=crop" alt="Salads">
+            <div class="cat-overlay">
+              <h3>Salads</h3>
+              <p>A build-your-own bar with hand-made dressings.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?q=80&w=800&auto=format&fit=crop" alt="Sea food">
+            <div class="cat-overlay">
+              <h3>Sea Food</h3>
+              <p>Grilled prawns & fish plated table-side, fresh off the fire.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="cat-card">
+          <div class="cat-card-inner">
+            <img src="https://images.unsplash.com/photo-1607330289024-1535c6b4e1c1?q=80&w=800&auto=format&fit=crop" alt="Live cooking counter">
+            <div class="cat-overlay">
+              <h3>Live Cooking</h3>
+              <p>Watch every dish finished right in front of you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURED MENU ============ -->
+<section id="menu" class="section menu-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Signature Plates</p>
+      <h2 class="section-title">Featured <span class="gold-italic">Menu</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="food-card">
+          <div class="food-card-img">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=700&auto=format&fit=crop" alt="Malai Boti Skewers">
+            <span class="food-price">Included</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <h3>Malai Boti Skewers</h3>
+            <p>Marinated overnight, finished on open coals at the grill counter.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="food-card">
+          <div class="food-card-img">
+            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?q=80&w=700&auto=format&fit=crop" alt="Chicken Karahi">
+            <span class="food-price">Included</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <h3>Chicken Karahi</h3>
+            <p>Small-batch cooked through service, tomato-rich & ginger finished.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="food-card">
+          <div class="food-card-img">
+            <img src="https://images.unsplash.com/photo-1625944230945-1b7dd3b949ab?q=80&w=700&auto=format&fit=crop" alt="Grilled Prawns">
+            <span class="food-price">Included</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <h3>Grilled Prawns</h3>
+            <p>Brought table-side fresh off the grill — a guest favourite.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="food-card">
+          <div class="food-card-img">
+            <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=700&auto=format&fit=crop" alt="Warm Gulab Jamun">
+            <span class="food-price">Included</span>
+          </div>
+          <div class="food-card-body">
+            <div class="food-rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <h3>Warm Gulab Jamun</h3>
+            <p>Served fresh from the dessert island alongside kheer & cakes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BUFFET TIMINGS ============ -->
+<section id="timings" class="section timings-section">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <p class="eyebrow-gold">Plan Your Visit</p>
+        <h2 class="section-title">Buffet <span class="gold-italic">Timings</span></h2>
+        <p class="section-text">Every sitting gets the full spread — ten live stations, unlimited refills, one price.</p>
+        <a href="#reservation" class="btn-luxury mt-3">Book Now</a>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="timing-table">
+          <div class="timing-row">
+            <span class="timing-name">Breakfast</span>
+            <span class="timing-time">9:30 AM – 11:30 AM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-name">Lunch</span>
+            <span class="timing-time">12:00 PM – 4:00 PM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-name">Hi-Tea</span>
+            <span class="timing-time">4:30 PM – 6:30 PM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-name">Dinner</span>
+            <span class="timing-time">7:00 PM – 11:30 PM</span>
+          </div>
+          <div class="timing-row">
+            <span class="timing-name">Weekends</span>
+            <span class="timing-time">9:30 AM – 12:00 AM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SPECIAL OFFERS ============ -->
+<section id="offers" class="section offers-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Save More</p>
+      <h2 class="section-title">Special <span class="gold-italic">Offers</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="0">
+        <div class="offer-card">
+          <i class="fa-solid fa-credit-card"></i>
+          <h3>Bank Discount</h3>
+          <p>15% off with select partner cards, every day of the week.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="100">
+        <div class="offer-card">
+          <i class="fa-solid fa-people-roof"></i>
+          <h3>Family Deal</h3>
+          <p>Kids under 6 dine free, ages 6–12 at half the standard price.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="200">
+        <div class="offer-card">
+          <i class="fa-solid fa-cake-candles"></i>
+          <h3>Birthday Package</h3>
+          <p>Complimentary cake & a decorated table for the birthday guest.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3" data-aos="flip-up" data-aos-delay="300">
+        <div class="offer-card">
+          <i class="fa-solid fa-briefcase"></i>
+          <h3>Corporate Deal</h3>
+          <p>Group rates for teams of 10+, with a private floor on request.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery" class="section gallery-section">
+  <div class="container-fluid px-lg-5">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Inside The Carnival</p>
+      <h2 class="section-title">Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <a href="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1400&auto=format&fit=crop" class="gallery-item glb g-tall" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=700&auto=format&fit=crop" alt="Restaurant interior">
+        <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+      <a href="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1400&auto=format&fit=crop" class="gallery-item glb" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=700&auto=format&fit=crop" alt="BBQ grill">
+        <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+      <a href="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=1400&auto=format&fit=crop" class="gallery-item glb" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=700&auto=format&fit=crop" alt="Dessert table">
+        <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+      <a href="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1400&auto=format&fit=crop" class="gallery-item glb g-tall" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=700&auto=format&fit=crop" alt="Chef plating">
+        <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+      <a href="https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=1400&auto=format&fit=crop" class="gallery-item glb" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=700&auto=format&fit=crop" alt="Dessert closeup">
+        <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+      <a href="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400&auto=format&fit=crop" class="gallery-item glb" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=700&auto=format&fit=crop" alt="Table setting">
+        <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIGHTBOX MODAL ============ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <img src="" alt="Gallery preview" id="lightboxImg">
+</div>
+
+<!-- ============ WHY CHOOSE US ============ -->
+<section class="section why-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Our Promise</p>
+      <h2 class="section-title">Why Guests <span class="gold-italic">Choose Us</span></h2>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="0">
+        <div class="why-box"><i class="fa-solid fa-medal"></i><h4>Premium Quality</h4></div>
+      </div>
+      <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="100">
+        <div class="why-box"><i class="fa-solid fa-leaf"></i><h4>Fresh Ingredients</h4></div>
+      </div>
+      <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+        <div class="why-box"><i class="fa-solid fa-hat-chef"></i><h4>Professional Chefs</h4></div>
+      </div>
+      <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="300">
+        <div class="why-box"><i class="fa-solid fa-champagne-glasses"></i><h4>Luxury Ambience</h4></div>
+      </div>
+      <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="400">
+        <div class="why-box"><i class="fa-solid fa-sack-dollar"></i><h4>Affordable Buffet</h4></div>
+      </div>
+      <div class="col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="500">
+        <div class="why-box"><i class="fa-solid fa-bolt"></i><h4>Fast Service</h4></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHEF SECTION ============ -->
+<section class="section chef-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Meet The Kitchen</p>
+      <h2 class="section-title">Our Master <span class="gold-italic">Chefs</span></h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="chef-card">
+          <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=700&auto=format&fit=crop" alt="Executive Chef">
+          <div class="chef-info">
+            <h3>Chef Imran Ali</h3>
+            <p class="chef-role">Executive Chef · 18 yrs</p>
+            <p class="chef-speciality">Speciality: Live BBQ & Karahi</p>
+            <div class="chef-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+        <div class="chef-card">
+          <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?q=80&w=700&auto=format&fit=crop" alt="Pastry Chef">
+          <div class="chef-info">
+            <h3>Chef Sana Khalid</h3>
+            <p class="chef-role">Pastry Chef · 11 yrs</p>
+            <p class="chef-speciality">Speciality: Dessert Island</p>
+            <div class="chef-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="chef-card">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?q=80&w=700&auto=format&fit=crop" alt="Sous Chef">
+          <div class="chef-info">
+            <h3>Chef Bilal Ahmed</h3>
+            <p class="chef-role">Sous Chef · 9 yrs</p>
+            <p class="chef-speciality">Speciality: Wok & Sea Food</p>
+            <div class="chef-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonial-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Guest Voices</p>
+      <h2 class="section-title">What Diners <span class="gold-italic">Say</span></h2>
+    </div>
+    <div class="swiper testimonial-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"Food quality was excellent, with a great variety of delicious dishes. Everything was fresh and well-presented, and the staff made us feel welcome."</p>
+            <div class="t-who">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop" alt="Guest">
+              <div><h5>Ayesha M.</h5><span>Google Review</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>"The live kitchen is the highlight — you actually see your food being prepared right in front of you. Adds both trust and excitement."</p>
+            <div class="t-who">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&auto=format&fit=crop" alt="Guest">
+              <div><h5>Hamza R.</h5><span>Google Review</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial-card">
+            <div class="t-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
+            <p>"Plates were picked up timely, drinks came often, and staff kept checking in. Prawns served table-side were a standout."</p>
+            <div class="t-who">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop" alt="Guest">
+              <div><h5>Fatima Z.</h5><span>Google Review</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVATION SECTION ============ -->
+<section id="reservation" class="section reservation-section">
+  <div class="container">
+    <div class="row align-items-center gy-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <p class="eyebrow-gold">Book Your Table</p>
+        <h2 class="section-title">Reserve Your <span class="gold-italic">Experience</span></h2>
+        <p class="section-text">Tell us when you're coming and how many — we'll have your table and first round of BBQ ready.</p>
+        <div class="reserve-contact">
+          <p><i class="fa-solid fa-phone"></i> +92 317 7775179</p>
+          <p><i class="fa-solid fa-location-dot"></i> 118-P, MM Alam Road, Gulberg 2, Lahore</p>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <form id="reservationForm" class="reservation-form" novalidate>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="rName">Full Name</label>
+              <input type="text" id="rName" required placeholder="Your name">
+              <span class="error-msg">Please enter your name</span>
+            </div>
+            <div class="col-md-6">
+              <label for="rEmail">Email</label>
+              <input type="email" id="rEmail" required placeholder="you@example.com">
+              <span class="error-msg">Please enter a valid email</span>
+            </div>
+            <div class="col-md-6">
+              <label for="rPhone">Phone</label>
+              <input type="tel" id="rPhone" required placeholder="03XX XXXXXXX">
+              <span class="error-msg">Please enter your phone number</span>
+            </div>
+            <div class="col-md-6">
+              <label for="rGuests">Guests</label>
+              <input type="number" id="rGuests" min="1" max="30" required placeholder="e.g. 4">
+              <span class="error-msg">Please enter number of guests</span>
+            </div>
+            <div class="col-md-6">
+              <label for="rDate">Date</label>
+              <input type="date" id="rDate" required>
+              <span class="error-msg">Please choose a date</span>
+            </div>
+            <div class="col-md-6">
+              <label for="rTime">Time</label>
+              <input type="time" id="rTime" required>
+              <span class="error-msg">Please choose a time</span>
+            </div>
+            <div class="col-12">
+              <label for="rRequest">Special Request</label>
+              <textarea id="rRequest" rows="3" placeholder="Birthday cake, window seat, dietary needs..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn-luxury w-100 mt-4">Confirm Reservation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVATION SUCCESS POPUP ============ -->
+<div class="reservation-popup" id="reservationPopup">
+  <div class="popup-box">
+    <div class="popup-icon"><i class="fa-solid fa-check"></i></div>
+    <h3>Table Reserved</h3>
+    <p>Thank you — your reservation request has been received. Our team will confirm shortly by phone.</p>
+    <button id="popupClose" class="btn-luxury">Close</button>
+  </div>
+</div>
+
+<!-- ============ FAQ SECTION ============ -->
+<section class="section faq-section">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-up">
+      <p class="eyebrow-gold">Good To Know</p>
+      <h2 class="section-title">Frequently Asked <span class="gold-italic">Questions</span></h2>
+    </div>
+    <div class="accordion luxury-accordion" id="faqAccordion" data-aos="fade-up">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+            Is the buffet price fixed for all-day dining?
+          </button>
+        </h2>
+        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes — one price gives you access to every live station, from breakfast through to the midnight closing, for as long as your sitting lasts.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+            Do you offer discounts for children?
+          </button>
+        </h2>
+        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Children under 6 dine free, and ages 6–12 are charged at half the standard adult price.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+            Can I book a table for a large group or corporate event?
+          </button>
+        </h2>
+        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Absolutely — groups of 10 or more qualify for corporate rates and can request a private section of the floor.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+            Is parking available at the venue?
+          </button>
+        </h2>
+        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Yes, dedicated valet and self-parking are available directly outside the venue on MM Alam Road.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT SECTION ============ -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <p class="eyebrow-gold">Get In Touch</p>
+        <h2 class="section-title">Visit <span class="gold-italic">The Carnival</span></h2>
+        <div class="contact-list">
+          <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>118-P Block, MM Alam Road, Gulberg 2, Lahore</span></div>
+          <div class="contact-item"><i class="fa-solid fa-phone"></i><span>+92 317 7775179</span></div>
+          <div class="contact-item"><i class="fa-brands fa-whatsapp"></i><span>+92 317 7775179</span></div>
+          <div class="contact-item"><i class="fa-solid fa-envelope"></i><span>reservations@thecarnival-lahore.com</span></div>
+          <div class="contact-item"><i class="fa-solid fa-clock"></i><span>Open Daily · 9:30 AM – 12:00 AM</span></div>
+        </div>
+        <div class="contact-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=The+Carnival+All+Day+Buffet+Gulberg+Lahore&output=embed"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="The Carnival location map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <h3 class="footer-logo">THE <span>CARNIVAL</span></h3>
+        <p>A live-kitchen, all-day buffet experience on MM Alam Road, Gulberg — where every plate is finished in front of you.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#timings">Timings</a></li>
+          <li><a href="#offers">Offers</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h4>Explore</h4>
+        <ul class="footer-links">
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reservation">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h4>Newsletter</h4>
+        <p>Subscribe for seasonal menus & offers.</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <h4 class="mt-4">Instagram</h4>
+        <div class="insta-feed">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=200&auto=format&fit=crop" alt="Instagram post">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=200&auto=format&fit=crop" alt="Instagram post">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?q=80&w=200&auto=format&fit=crop" alt="Instagram post">
+          <img src="https://images.unsplash.com/photo-1567337710282-00832b415979?q=80&w=200&auto=format&fit=crop" alt="Instagram post">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 The Carnival All Day Buffet. All rights reserved. · Demo website, built for illustration purposes.</p>
+    </div>
+  </div>
+  <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+</footer>
+
+<!-- ============ SCRIPTS ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.4/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
